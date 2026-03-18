@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--HERO-->
+    <header id="hero">
+        <!-- Binary rain intro overlay -->
+        <div id="binary-overlay">
+            <canvas id="binary-canvas"></canvas>    
+        </div>
+
+        <!-- Slideshow background -->
+        <div id="hero-slides">
+          <div class="hero-slide active" style="background-image: url('images/toystolife.png')"></div>
+          <div class="hero-slide" style="background-image: url('images/spaceshooter.png')"></div>
+          <div class="hero-slide" style="background-image: url('images/samuraigame.png')"></div>
+        </div>
+
+        <div class="hero-content" id="hero-content">
+          <h1 class="hero-title">
+            Kaikō<br/>
+            <em>van Gemerden</em>
+          </h1>
+          <p class="hero-sub">
+            I am a student with a lot of experience in development and programming, with a main focus on games. Take a look around to see my projects.
+          </p>
+        </div>
+    </header>
+
+  <!--NAV-->
+  <nav id="navbar">
+    <a href="#hero" class="nav-left">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img"/>
+      </div>
+      <span class="nav-name">Kaikō <span>van Gemerden</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ABOUT -->
+    <div class="section-wrap">
+      <section id="about">
+        <h2 class="sec-title">About me</h2>
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p>I am a student with a lot of experience in development and programming in different programs and languages. I learned these mainly through school, but also self study.</p>
+            <p>My expertise is game development, in which I have the most experience (and fun). 
+              I have made games by myself and with partners. We programmed and designed everything, including the assets, ourselfs.</p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years of experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects produced</div>
+            </div>
+            <div class="stat stat-list">
+              <div class="stat-list-title">Skills</div>
+              <ul>
+                <li>Unity</li>
+                <li>Blender: 3D modeling/animation</li>
+                <li>2D design/animation</li>
+                <li>Web development</li>
+                <li>Embedded</li>
+                <li>AI | Neural Networks</li>
+              </ul>
+            </div>
+            <div class="stat stat-list">
+              <div class="stat-list-title">Languages</div>
+              <ul>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>HTML/CSS</li>
+                <li>SQL</li>
+                <li>R</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section-wrap alt">
+      <section id="projects">
+        <h2 class="sec-title">Projects</h2>
+        <div class="projects-list">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/toystolife.png">
+            </div>
+            <div class="project-body">
+              <div class="project-num">09/2025 - 02/2026</div>
+              <h3 class="project-title">Toys to Life - Game</h3>
+              <p class="project-desc">My biggest project by far. A toys to life game using NFC chips in figures to transport them into the game.
+                It is a take on the Skylanders series, to learn and understand how the figures and the games work.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Unity</span>
+                <span class="project-tag">Blender: 3D modeling/animation</span>
+                <span class="project-tag">C#</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/spaceshooter.png">
+            </div>
+            <div class="project-body">
+              <div class="project-num">02/2024 - 06/2024</div>
+              <h3 class="project-title">Space shooter - Game</h3>
+              <p class="project-desc">A multiplayer shooter game supporting 50+ players at a time. I worked mostly on game and visual design as well as modeling for this one.</p>
+              <div class="project-tags">
+                <span class="project-tag">Unity</span>
+                <span class="project-tag">Blender: 3D modeling/animation</span>
+                <span class="project-tag">C#</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/samuraigame.png">
+            </div>
+            <div class="project-body">
+              <div class="project-num">09/2024 - 02/2025</div>
+              <h3 class="project-title">Puzzle Game</h3>
+              <p class="project-desc">My best solo project, a 2D top down puzzle game. It features around 5 levels with new abilities after every three or so. 
+                It has a difficulty curve that eases the player in and introduces them to the mechanics.</p>
+              <div class="project-tags">
+                <span class="project-tag">Unity</span>
+                <span class="project-tag">2D design/animation</span>
+                <span class="project-tag">C#</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/cppcode.png">
+            </div>
+            <div class="project-body">
+              <div class="project-num">09/2023 - 01/2024</div>
+              <h3 class="project-title">C++ course</h3>
+              <p class="project-desc">I followed a university grade C++ course from the VU in Amsterdam. It thought me the basics of C++ and some more indepth ideas about memory and pointers.</p>
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Memory management</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section-wrap">
+      <section id="contact">
+        <h2 class="sec-title">Contact</h2>
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p>If you have any questions or anything, you can email me and I will probably respond. Wacht my work on GitHub or connect with me on LinkedIn, but I haven't set that up yet.</p>
+            <p>Email: cacauboon.vangember@gmail.com</p>
+            <div class="contact-links">
+              <a href="https://github.com/KaikouFox" class="contact-link">GitHub <span>Code</span></a>
+              <a href="https://www.linkedin.com/in/cacauboon-van-gember-78702b350/" class="contact-link">LinkedIn <span>Profile</span></a>
+              <a href="https://www.instagram.com/cacauboonvangember" class="contact-link">Instagram <span>Profile</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>Kaikō van Gemerden</span>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
